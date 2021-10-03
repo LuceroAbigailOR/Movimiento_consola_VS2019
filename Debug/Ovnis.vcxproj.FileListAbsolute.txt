@@ -1,2 +1,0 @@
-C:\Users\LUCERO Y ALONSO\Desktop\TODO\UPC\Programación 2\Puntos extras\Ovnis\Debug\Ovnis.vcxprojAssemblyReference.cache
-C:\Users\LUCERO Y ALONSO\Desktop\TODO\UPC\Programación 2\Puntos extras\Ovnis\Debug\Ovnis.exe
