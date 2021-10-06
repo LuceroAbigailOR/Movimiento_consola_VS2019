@@ -83,7 +83,7 @@ public:
 		for (unsigned int i = 0; i < arreglora.size(); i++) {
 			if ((arreglora[i]->gety() + arreglora[i]->getalto() + arreglora[i]->getdy()) > 50) {
 				arreglora[i]->borrar();
-				arreglora.erase(arreglora.begin());
+				arreglora.erase(arreglora.begin()+i);
 				contTotal--;
 			}
 		}
@@ -91,7 +91,7 @@ public:
 		for (unsigned int i = 0; i < arreglorb.size(); i++) {
 			if ((arreglorb[i]->gety() + arreglorb[i]->getalto() + arreglorb[i]->getdy()) >50) {
 				arreglorb[i]->borrar();
-				arreglorb.erase(arreglorb.begin());
+				arreglorb.erase(arreglorb.begin()+i);
 				contTotal--;
 			}
 		}
@@ -99,7 +99,7 @@ public:
 		for (unsigned int i = 0; i < arreglorg.size(); i++) {
 			if ((arreglorg[i]->gety() + arreglorg[i]->getalto() + arreglorg[i]->getdy()) >50) {
 				arreglorg[i]->borrar();
-				arreglorg.erase(arreglorg.begin());
+				arreglorg.erase(arreglorg.begin()+i);
 				contTotal--;
 			}
 		}
