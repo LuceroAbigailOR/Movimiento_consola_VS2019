@@ -20,6 +20,8 @@ public:
 		//addRazaBeta();
 		//addRazaGama();
 	}
+	
+	~Controladora(){}
 
 	void addRazaAlfa() {
 		RazaAlfa* _ra = new RazaAlfa();
