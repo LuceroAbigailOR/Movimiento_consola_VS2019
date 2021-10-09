@@ -21,7 +21,11 @@ public:
 		//addRazaGama();
 	}
 	
-	~Controladora(){}
+	~Controladora(){
+		for(int i=0;i<arreglora.size();i++) delete[] arreglora[i];
+		for(int i=0;i<arreglorg.size();i++) delete[] arreglorg[i];
+		for(int i=0;i<arreglorb.size();i++) delete[] arreglorb[i];
+	}
 
 	void addRazaAlfa() {
 		RazaAlfa* _ra = new RazaAlfa();
