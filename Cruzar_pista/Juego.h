@@ -21,7 +21,12 @@ public:
 		ganaste = false;
 	}
 
-	~Juego() {}
+	~Juego() {
+		delete p;
+		for(int i=0;i<arrbuses.size();i++)delete[] arrbuses[i];
+		for(int i=0;i<arrcarros.size();i++)delete[] arrcarros[i];
+		for(int i=0;i<arrbicicletas.size();i++)delete[] arrbicicletas[i];
+	}
 
 	void addBus() {
 		Bus* _t = new Bus();
