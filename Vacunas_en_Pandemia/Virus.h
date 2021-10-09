@@ -14,7 +14,7 @@ public:
 	~Virus() {}
 
 	void borrar() {
-		Console::SetCursorPosition(x, y);		cout << "           ";
+		Console::SetCursorPosition(x, y);	cout << "           ";
 		Console::SetCursorPosition(x, y + 1);	cout << "           ";
 		Console::SetCursorPosition(x, y + 2);	cout << "           ";
 		Console::SetCursorPosition(x, y + 3);	cout << "           ";
@@ -24,7 +24,7 @@ public:
 	void dibujar() {
 		Console::ForegroundColor = ConsoleColor::Green;
 
-		Console::SetCursorPosition(x, y);		cout << R"(     q     )";
+		Console::SetCursorPosition(x, y);	cout << R"(     q     )";
 		Console::SetCursorPosition(x, y + 1);	cout << R"(  o.-o-.o  )";
 		Console::SetCursorPosition(x, y + 2);	cout << R"(o-(o o o)-o)";
 		Console::SetCursorPosition(x, y + 3);	cout << R"(  o.-o-.o  )";
