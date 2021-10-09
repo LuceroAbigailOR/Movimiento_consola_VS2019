@@ -25,7 +25,7 @@ public:
 
 	void dibujar() {
 		Console::ForegroundColor = ConsoleColor::Red;
-		Console::SetCursorPosition(x, y);		cout << R"(   __I_  )";
+		Console::SetCursorPosition(x, y);	cout << R"(   __I_  )";
 		Console::SetCursorPosition(x, y + 1);	cout << R"( /\-_--\ )";
 		Console::SetCursorPosition(x, y + 2);	cout << R"(/  \_-__\)";
 		Console::SetCursorPosition(x, y + 3);	cout << R"(|[]| [] |)";
