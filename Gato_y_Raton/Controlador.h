@@ -22,7 +22,10 @@ public:
 		N= rand() % 16 + 7; //valor aleatorio entre 7 y 15
 	}
 
-	~Controlador() {}
+	~Controlador() {
+		delete g;
+		for (int i = 0; i < arrRatones.size(); i++) delete[] arrRatones[i];
+	}
 
 	void addRaton() {
 		Raton* _r = new Raton();
