@@ -16,7 +16,10 @@ public:
 		cont = 0;
 	}
 
-	~Controlador() {}
+	~Controlador() {
+		delete m;
+		for(int i=0;i<arrestrellas.size();i++) delete[] arrestrellas[i];
+	}
 
 	void addEstrella() {
 		Estrella* _ra = new Estrella();
