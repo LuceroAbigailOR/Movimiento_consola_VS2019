@@ -25,7 +25,12 @@ public:
 		insertar();
 	}
 
-	~Controlador() {}
+	~Controlador() {
+		delete p,m;
+		for(int i=0;i<arrFantasmas.size();i++) delete[] arrFantasmas[i];
+		for(int i=0;i<arrPacDots.size();i++) delete[] arrPacDots[i];
+		for(int i=0;i<arrBonus.size();i++) delete[] arrBonus[i];
+	}
 
 	void addFantasma() {
 		Fantasma* _f = new Fantasma();
